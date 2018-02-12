@@ -2,11 +2,11 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Atnimak`s journey
+tagline:             From little boy to java developer
+url:                 atnimak.github.io
 paginate:            1
-baseurl:             ""
+baseurl:             "http://atnimak.github.io/atnimak.github.io/"
 
 # Assets
 #
@@ -17,9 +17,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Antonov Maxim
+  url:               https://github.com/atnimak
+  email:             atnimak@gmail.com
 
 # Custom vars
 version:             2.0.0
