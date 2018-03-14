@@ -4,8 +4,13 @@ permalink:           pretty
 # Setup
 title:               Atnimak`s journey
 tagline:             From little boy to java developer
+paginate:         10
+paginate_path:    "page:num"
+highlighter:      rouge
+future:           false
+show_drafts:      false
+
 url:                 atnimak.github.io
-paginate:            1
 baseurl:             ""
 
 # Assets
@@ -21,6 +26,13 @@ author:
   url:               https://github.com/atnimak
   email:             atnimak@gmail.com
 
+# This is the list of pages to include in the header of the website.
+pages_list:
+  О блоге: '/about'
+  Архив записей: '/archive'
+  Лента: '/atom.xml'
+
+
 # Custom vars
 version:             2.0.0
 github:
@@ -28,5 +40,6 @@ github:
 
 # Gems
 gems:
+  - jemoji
   - jekyll-paginate
   - jekyll-gist
