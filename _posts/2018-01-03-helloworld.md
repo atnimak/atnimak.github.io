@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello world
+tags: life blog
 ---
 
 *Скажем вместе* Hello world!
