@@ -30,6 +30,7 @@ author:
 pages_list:
   О блоге: '/about'
   Архив записей: '/archive'
+  Теги: '/tags'
   Лента: '/atom.xml'
   Резюме: '/resume'
 

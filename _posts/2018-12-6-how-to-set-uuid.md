@@ -4,14 +4,13 @@ title: Как установить UUID и исправить ошибку 0x800
 tags: virtualbox
 ---
 
-## Проблема
 После создания снапшота или после перемещения .vhd или .vdi файла, при запуске виртуальной машины появляется ошибка 0x80004005 UUID doesn`t match
 
 ---
 
 <script type="text/javascript" src="/public/js/jssor.slider.min.js"></script>
 
-## Помогло следующее:  
+Текст ошибки примерно такой 
 ```
 Fehlercode: E_FAIL (0x80004005)
 Component: ProgressProxy
