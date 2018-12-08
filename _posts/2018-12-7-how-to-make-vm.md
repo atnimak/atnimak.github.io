@@ -21,10 +21,9 @@ tags: virtualbox
 - Снимаем галочку с пункта «Use Vhdx».
 - В левой части окна отмечаем галочкой нужные диски, можно выбрать только диск с установленной Windows, мне же нужно было отметить все диски.
 - Указываем место хранения и имя файла виртуального диска.
+- Нажимаем Create
 
 ![Интерфейс программы disk2vhd](/assets/disk2vhd/dsk2vhd.jpg)
-
-- нажимаете Create
 
 И программа начнет создание виртуального диска, в зависимости размера это может занять значительное время. Когда программа закончит работу файл виртуального диска  с расширением .vhd будет находится в той папке, которую вы указали.
 
@@ -67,12 +66,14 @@ tags: virtualbox
 ![Интерфейс VirtualBox](/assets/disk2vhd/v3.jpg)
 
 Выбираем "Использовать существующий виртуальный диск" и нажимаем на кнопку проводника
+
 ![Интерфейс VirtualBox](/assets/disk2vhd/v4.jpg)
 
 В проводнике находим нужный нам образ системы. Выделяем, нажимаем "Открыть".
 ![Интерфейс VirtualBox](/assets/disk2vhd/v5.jpg)
 
 Нажимаем "Создать".
+
 ![Интерфейс VirtualBox](/assets/disk2vhd/v6.jpg)
 
 Виртуальная машина создана, но при запуске скорее всего выдаст ошибку при загрузке.
@@ -146,3 +147,5 @@ tags: virtualbox
 После того, как мы нажмем "Подключить образ диска Дополнения гостевой ОС" в CD приводе виртуальной машины появится диск с дополнениями. Нужно его открыть и установить программное обеспечение, которое на нем находится. После этого диск можно "изъять".
 
 ![Настройка VirtualBox](/assets/disk2vhd/d2.jpg)
+
+P.S. Спасибо админу [remontcompa.ru](remontcompa.ru) за [эту статью](https://remontcompa.ru/885-perenos-windows-7-so-stacionarnogo-kompyutera-na-virtualnuyu-mashinu-virtualbox-ustanovlennuyu-na-noutbuke-s-windows-10.html) и [вот эту статью](https://remontcompa.ru/876-kak-sozdat-fayl-virtualnogo-zhestkogo-diska-vhd.html), а также [remontka.pro](https://remontka.pro) за [этот материал про создание виртуального диска](https://remontka.pro/virtual-hdd-windows/) и [вот этот про восстановление загрузчика в Windows 10](https://remontka.pro/windows-10-bootloader-fix/).
