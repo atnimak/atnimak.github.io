@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Проблемы OneDrive
-tags: windows onedrive problemSolved
+tags: windows onedrive
 ---
 
 ## Проблема
