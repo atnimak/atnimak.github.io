@@ -4,9 +4,11 @@ title: Ошибка при обновлении virtualbox
 tags: linux virtualbox
 ---
 
-# Ошибка driver doesn`t match при обновлении virtualbox
+Сегодня посмотрим, как разобраться с проблемой driver doesn`t match после обновления VirtualBox
 
-После очередного обновления virtualbox при запуске виртуальной машины появляется окно с ошибкой
+## Ошибка driver doesn`t match
+
+Итак, после очередного обновления virtualbox при запуске виртуальной машины появляется окно с ошибкой driver doesn`t match
 
 ```
 VERR_VM_DRIVER_VERSION_MISMATCH (-1912) - The installed support driver doesn't match the version of the user.
@@ -16,7 +18,7 @@ VERR_VM_DRIVER_VERSION_MISMATCH (-1912) - The installed support driver doesn't m
 
 <script type="text/javascript" src="/public/js/jssor.slider.min.js"></script>
 
-# Решение  
+## Решение  
 
 Удаляем VirtualBox и очищаем систему от старых пакетов и зависимостей:
 
