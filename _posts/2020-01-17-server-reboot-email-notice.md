@@ -43,3 +43,5 @@ set mailsend-go=c:\mailsend-go-dir\mailsend-go.exe
 
 ВыБираем пакетный файл (батник), который нам нужен
 ![Панель управления NVIDIA](/assets/server-reboot/5.jpg)
+
+За скриншоты спасибо админу [salf-net.ru](https://salf-net.ru/).
