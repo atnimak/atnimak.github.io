@@ -22,6 +22,13 @@ make
 sudo insmod 8812au.ko
 ```
 
+Иногда в результате команды **sudo insmod 8812au.ko** можно получить **error could not insert module device or resource busy**. Это происходит потому, что rtl8812au уже загружен и это препятствует загрузке 8812au.ko. Так что выгрузим rtl8812au. И загрузим 8812au.ko.
+
+```
+sudo modprobe -r rtl8812au
+sudo insmod 8812au.ko
+```
+
 После этого мы уже сможем использовать наш адаптер, тем не менее добавим его в новые ядра, установленные в нашей системе. Настроим DKMS:
 
 ```bash
