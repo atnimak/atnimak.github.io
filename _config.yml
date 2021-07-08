@@ -10,8 +10,8 @@ highlighter:      rouge
 future:           false
 show_drafts:      false
 
-url:                 atnimak.github.io
-baseurl:             ""
+url:              https://atnimak.github.io
+shorturl:         atnimak.github.io
 
 # Assets
 #
