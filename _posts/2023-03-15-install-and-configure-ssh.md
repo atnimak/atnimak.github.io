@@ -32,7 +32,7 @@ systemctl enable sshd.service
 ## Подключение по ssh
 Осуществляется командой
 `ssh user@host`
-Например: `ssh atnimak@192.168.1.72`, в этом случа подключение будет осуществляться на стандартный порт 22. Если ты уже изменил порт подключения на сервере, то подключаться нужно к этом порту, например: `ssh atnimak@192.168.1.72 -p 3385`
+Например: `ssh user@192.168.1.72`, в этом случа подключение будет осуществляться на стандартный порт 22. Если ты уже изменил порт подключения на сервере, то подключаться нужно к этом порту, например: `ssh user@192.168.1.72 -p 1111`
 
 ## Настройка клиента ssh
 Для начала на своей машине сгенерируем пару ключей: публичный и приватный:
@@ -58,7 +58,7 @@ nano ~/.ssh/config
 Host github.com
  IdentityFile ~/.ssh/git_rsa
 
-Host 89.108.71.172
+Host 25.456.73.174
  IdentityFile ~/.ssh/vpn_server_keys
 ```
 Теперь для этих хостов ssh будет открывать указанные файлы ключа. А для всех остальных будет искать ключь в id_rsa.
@@ -69,7 +69,7 @@ Host github.com
  IdentityFile ~/.ssh/git_rsa
 
 Host vpnserver
- HostName 89.108.71.172
+ HostName 25.456.73.174
  User root
  Port 22
  IdentityFile ~/.ssh/vpn_server_keys
@@ -90,7 +90,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 **Второй**
 Скоприровать содержимое файла одной командой
 ```
-cat ~/.ssh/id_rsa.pub | ssh root@89.108.71.172 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod go= ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh root@25.456.73.174 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod go= ~/.ssh/authorized_keys"
 ```
 
 Выглядит сложно, но на самом деле это простая операция:
@@ -187,13 +187,13 @@ sudo firewall-cmd reload
 
 Команда чтобы передать файл на удаленный сервер
 ```
-scp -P 3385 newtestfile.txt atnimak@192.168.1.72:./
+scp -P 3385 newtestfile.txt username@192.168.1.72:./
 ```
 Подключение будет осуществляться с помощью ключа `ssh`, так что нужно будет подготовить passphrase. С помощью -P мы указываем порт, ведь мы его меняли.  Затем имя или адрес файла. Затем имя пользователя и адрес хоста и после двоеточия место назначения. В нашем примере это домашняя папка.
 
 Команда чтобы передать файл с удаленного сервера на локальной устройство:
 ```
- scp -P 3385 atnimak@192.168.1.72:test.txt .
+ scp -P 3385 username@192.168.1.72:test.txt .
 ```
 Указываем номер порта, адрес файла на удаленном сервере (после двоеточия, после адреса хоста), и адрес назначения. В нашем случае "точка" - это значит, что положить нужно в ту директорию, в которой мы находимся.
 
@@ -203,11 +203,11 @@ scp -P 3385 -i ~/.ssh/id_rsa.pub USER@SERVER:/home/USER/FILENAME FILENAME
 ```
 Например:
 ```
-scp -P 45892 -i ~/.ssh/ovh_server ubuntu@193.70.88.140:openvpn_strasburg.ovpn  C:\Users\atnimak\Downloads
+scp -P 45892 -i ~/.ssh/ovh_server ubuntu@193.70.88.140:openvpn_strasburg.ovpn  C:\Users\username\Downloads
 ```
 Или
 ```
- scp -P 45892 -i ~/.ssh/ovh_server ubuntu@193.70.88.140:/etc/danted.conf  C:\Users\atnimak\Downloads
+ scp -P 45892 -i ~/.ssh/ovh_server ubuntu@193.70.88.140:/etc/danted.conf  C:\Users\username\Downloads
 ```
 
 ## Неудачные попытки входа
