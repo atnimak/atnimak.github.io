@@ -14,8 +14,8 @@ tags: windows linux ssh proxy vpn vps
 
 ## VPS и SSH
 Для начала нам потребуется VPS  и умение подключаться к нему по SSH. Но об этом у меня уже написано:
-- [Настройка SSH](/_posts/2023-03-14-install-and-configure-ssh.md)
-- [Настойка VPN Outline и OpenVPN](/_posts/2023-03-14-install-and-configure-vpn.md)
+- [Настройка SSH](/2023/03/14/install-and-configure-ssh/)
+- [Настойка VPN Outline и OpenVPN](/2023/03/14/install-and-configure-vpn/)
 
 ## Настройка proxy
 Обновляем сервер

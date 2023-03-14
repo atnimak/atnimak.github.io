@@ -23,6 +23,7 @@ ssh root@ip-адрес сервера
 ```
 
 2. Вводим комманду [исходный код разсположен на gitgub](https://github.com/Nyr/openvpn-install) и устанавливаем сервер
+
 ```
 apt update
 apt upgrade // обновляем программное обеспечение
